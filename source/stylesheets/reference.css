@@ -1,0 +1,227 @@
+
+
+body {
+	font: 16px/1.5 Arial, 'Helvetica Neue', 'Liberation Sans', FreeSans, sans-serif;
+    color: #333;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    display: block;
+}
+
+
+/* The width of a block element should not be increased if padding is increased. */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#header {
+	min-height: 400px;
+	background-image: url("../images/header_bg.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+    background-color: #444;
+}
+
+/* Logo and menu area. */
+#zone-branding-wrapper {
+	width: 960px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#zone-branding {
+	width: 384px; /* 2/5 * 960 */
+	height: 100px;
+	float: left;
+}
+
+#zone-menu-wrapper {
+	width: 576px; /* 3/5 * 960 */
+	height: 100px;
+	margin-left: 384px;
+}
+
+#zone-languages {
+	width: 100%;
+	height: 35px;
+	position: relative;
+}
+
+#zone-menu {
+	width: 100%;
+	height: 65px;
+}
+
+/* Advertisment area, e.g. slideshow. */
+#zone-ad-wrapper {
+	width: 960px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#zone-ad-slider {
+    position: relative;
+}
+
+.slideshow-overlay-left {
+    position: absolute;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    width: 380px;
+    height: 300px;
+    padding: 50px 25px;
+    top: 0px;
+    left: 40px;
+    z-index: 10;
+}
+
+.slideshow-overlay-right {
+    position: absolute;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    width: 380px;
+    height: 300px;
+    padding: 50px 25px;
+    top: 0px;
+    right: 40px;
+    z-index: 10;
+}
+
+.none {
+    display: none;
+}
+
+.slide-title {
+    color: #cc5d00;
+}
+
+/* Here goes the actual content of the site. */
+#content {
+	min-height: 500px;
+	background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer {
+	min-height: 250px;
+	background-image: url("../images/footer_bg.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	clear: both;
+}
+
+#container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    height: 677px;
+    background: url('../images/bg_8576.jpg');
+    background-size: 960px 677px;
+}
+
+#photo_container {
+    position: relative;
+    left: 30px;
+    top: 50px;
+    width: 310px;
+    height: 600px;
+}
+
+#info {
+    font-family: verdana, serif;
+    font-size: 0.90em;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+
+#team-content {
+    width: 960px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#button {
+    padding-top: 15px;
+}
+
+.logo {
+    font-family: verdana, serif;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Order menu items horizontal. */
+.menu-item {
+	display: inline;
+	padding: 5px 0px;
+}
+
+.menu-item:hover {
+	background: url("../images/top_menu_bg.png") bottom no-repeat;
+}
+
+.menu-item-link {
+	text-decoration: none;
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #555555;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.locale-selector {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin: 0px 20px;
+	list-style-type: none;
+}
+
+.locale {
+	display: inline;
+	margin-left: 5px;
+	padding: 0px;
+}
+
+.locale-link {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #afafaf;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	padding: 3px;
+	font-size: 0.75em;
+}
+
+.locale-link-selected {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #FF7C0A;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	padding: 3px;
+	font-size: 0.75em;
+}
+
+.locale-label {
+	text-align: center;
+	display: inline-block;
+	color: white;
+	text-transform: capitalize;
+	width: 17px;
+}
+
