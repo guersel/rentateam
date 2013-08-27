@@ -103,6 +103,7 @@ body {
 
 /* Here goes the actual content of the site. */
 #content {
+    position: relative;
 	min-height: 500px;
 	background-color: white;
     margin-top: 10px;
@@ -148,6 +149,33 @@ body {
     padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#blog-content-wrapper {
+    position: relative;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#blog-content {
+    position: relative;
+    width: 960px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -308px;
+    background-color: white;
+    min-height: 308px;
+    padding: 30px 35px;
+}
+
+#blog-sidebar {
+    position: absolute;
+    width: 200px;
+    right:-200px;
+    top: 0px;
+    padding: 20px 20px;
 }
 
 div#button {
