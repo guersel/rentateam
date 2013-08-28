@@ -1,0 +1,32 @@
+<header id="header">
+    <div id="zone-branding-wrapper">
+        <div id="zone-branding">
+            <p class="logo">
+                <a id="logo-link" href="/index.html">Rent a team - IT Consulting</a>
+            </p>
+        </div>
+        <div id="zone-menu-wrapper">
+            <div id="zone-languages">
+                <%= current_page.data.test %>
+            </div>
+            <div id="zone-menu">
+                <ul class="menu">
+                    <% data.menu.each do |item| %>
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="<%= item.link %>"><span class="menu-item-label"><%= item.label %></span></a>
+                        </li>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="zone-ad-wrapper">
+        <div id="zone-ad-slider">
+            <% if content_for?(:slideshow) %>
+                <%= yield_content :slideshow %>
+            <% end %>
+        </div>
+    </div>
+
+</header>

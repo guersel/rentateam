@@ -17,36 +17,7 @@
 <body class="<%= page_classes %>">
 
 
-<header id="header">
-    <div id="zone-branding-wrapper">
-        <div id="zone-branding">
-            <p class="logo">
-                <a href="/test_index.html">Rent a team - IT Consulting</a>
-            </p>
-        </div>
-        <div id="zone-menu-wrapper">
-            <div id="zone-languages">
-                <%= current_page.data.test %>
-            </div>
-            <div id="zone-menu">
-                <ul class="menu">
-                    <% data.menu.each do |item| %>
-                        <li class="menu-item">
-                            <a class="menu-item-link" href="<%= item.link %>"><span class="menu-item-label"><%= item.label %></span></a>
-                        </li>
-                    <% end %>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="zone-ad-wrapper">
-        <div id="zone-ad-slider">
-
-        </div>
-    </div>
-
-</header>
+<%= partial "header" %>
 
 <div id="content">
     <div id="blog-content-wrapper">
@@ -85,9 +56,7 @@
 
 
 
-<footer id="footer">
-
-</footer>
+<%= partial "footer" %>
 
 </body>
 </html>

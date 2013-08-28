@@ -1,0 +1,47 @@
+<% content_for :slideshow do %>
+    <div id="slideshow">
+        <img data-slideshow-overlay="loesungen" src="images/loesungen.png" />
+        <img data-slideshow-overlay="projekte" src="images/projekte.png" />
+        <img data-slideshow-overlay="consulting" src="images/consulting.png" />
+
+    </div>
+    <div id="loesungen" class="slideshow-overlay-left none">
+        <h3 class="slide-title">Analyse und Lösungen</h3>
+        Wir analysieren bestehende Systeme und finden passende Lösungen.
+    </div>
+    <div id="projekte" class="slideshow-overlay-right none">
+        <h3 class="slide-title">Projekte</h3>
+        Projektumsetzung von der Analyse bis zur Abnahme.
+    </div>
+    <div id="consulting" class="slideshow-overlay-left none">
+        <h3 class="slide-title">Consulting</h3>
+        Bedarfsorientiere IT-Beratung
+    </div>
+<% end %>
+
+
+<% content_for :script do %>
+    <script type="text/javascript">
+        $('#slideshow').cycle({
+            before: onBefore
+        });
+
+        function onBefore(previousImage, currentImage, options) {
+            if (previousImage) {
+                var overlay = $(previousImage).attr('data-slideshow-overlay');
+
+                if (!$("#"+overlay).hasClass('none')) {
+                    $("#"+overlay).addClass('none');  // disable overlay
+                }
+            }
+
+            if (currentImage) {
+                var overlay = $(currentImage).attr('data-slideshow-overlay');
+
+                if ($("#"+overlay).hasClass('none')) {
+                    $("#"+overlay).removeClass('none');  // show overlay
+                }
+            }
+        }
+    </script>
+<% end %>

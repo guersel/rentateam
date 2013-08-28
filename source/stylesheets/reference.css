@@ -205,10 +205,15 @@ div#button {
 	text-decoration: none;
 	margin-right: 10px;
 	margin-left: 10px;
-	color: #555555;
+	color: gray;
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.menu-item-link:hover {
+  text-decoration: none;
+    color: gray;
 }
 
 .locale-selector {
@@ -251,5 +256,10 @@ div#button {
 	color: white;
 	text-transform: capitalize;
 	width: 17px;
+}
+
+#logo-link {
+    color: white;
+    text-decoration: none;
 }
 
